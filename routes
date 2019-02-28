@@ -1,4 +1,2 @@
 /              HomeR GET
-/add/#Int/#Int AddR  GET
-/json          PersonR GET
-/book          BookR GET
+/book          BookR POST

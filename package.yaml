@@ -5,11 +5,13 @@ dependencies:
 - base
 - yesod-core
 - text
+- smartbook
 - bytestring
 - containers
-- base64-bytestring
-- extra
-- cipher-aes
+- aeson
+#- base64-bytestring
+#- extra
+#- cipher-aes
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.

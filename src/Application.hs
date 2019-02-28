@@ -8,9 +8,7 @@ module Application where
 import Foundation
 import Yesod.Core
 
-import Add
 import Home
-import Person
 import Book
 
 mkYesodDispatch "App" resourcesApp

@@ -7,10 +7,7 @@ import Yesod.Core
 
 getHomeR :: Handler Html
 getHomeR = defaultLayout $ do
-    setTitle "Minimal Multifile"
+    setTitle "Smartbook service"
     [whamlet|
-        <p>
-            <a href=@{AddR 5 7}>HTML addition
-        <p>
-            <a href=@{AddR 5 7}?_accept=application/json>JSON addition
+        <p> Smartbook service Alpha
     |]
