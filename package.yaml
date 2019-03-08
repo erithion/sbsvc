@@ -10,8 +10,6 @@ dependencies:
 - containers
 - aeson
 
-# The library contains all of our application code. The executable
-# defined below is just a thin wrapper.
 library:
   source-dirs: src
 
