@@ -1,0 +1,16 @@
+#!/bin/sh
+
+remote="$1"
+url="$2"
+
+#if [[ $url =~ heroku ]] ; then
+    hash_name=APP_GIT_HASH
+    hash=$(git rev-parse HEAD)
+
+    echo Setting $hash_name to $hash on app sbsvc
+    heroku config:set $hash_name=$hash --app sbsvc
+    if [ $? -eq 0 ]; then
+       exit 0
+    else
+       exit -1
+    fi
