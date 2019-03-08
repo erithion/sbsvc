@@ -10,5 +10,6 @@ import Yesod.Core
 
 import Home
 import Book
+import Version
 
 mkYesodDispatch "App" resourcesApp
